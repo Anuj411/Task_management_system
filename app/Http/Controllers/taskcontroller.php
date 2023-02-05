@@ -124,7 +124,7 @@ class taskcontroller extends Controller
         $insert_data = [];
         foreach($user_list as $uid){
             foreach ($task_list as $tid){
-                $data = ['user_id'=>intval($uid), 'task_id'=>intval($tid), 'start_date'=>$s_date, 'end_date'=>$e_date];
+                $data = ['users_id'=>intval($uid), 'task_id'=>intval($tid), 'start_date'=>$s_date, 'end_date'=>$e_date];
                 array_push($insert_data, $data);
             }
         }
